@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Bites - Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-teal-600">Healthy Bites</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-600 hover:text-gray-800">Dashboard</a>
+                <a href="community.html" class="text-gray-600 hover:text-gray-800">Community</a>
+                <a href="addRecipe.html" class="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">Add Recipe</a>
+                <a href="profile.html" class="text-teal-600 hover:text-teal-800 font-semibold">Profile</a>
+                <button id="logoutBtn" class="text-gray-600 hover:text-gray-800">Logout</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-6 py-8">
+        <h1 class="text-4xl font-bold text-center text-teal-700 mb-2">Your Profile</h1>
+        <p class="text-center text-gray-500 mb-10">Help us personalize your goals by telling us about yourself!</p>
+
+        <p id="profileMessage" class="text-center text-red-500 mb-4"></p>
+
+        <form id="profileForm" class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+            <div class="mb-6">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                <input type="text" id="name" placeholder="e.g., John Doe" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-500" required />
+            </div>
+
+            <div class="mb-6">
+                <label for="height" class="block text-gray-700 text-sm font-bold mb-2">Height (cm)</label>
+                <input type="number" id="height" placeholder="e.g., 175" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-500" required />
+            </div>
+            <div class="mb-6">
+                <label for="weight" class="block text-gray-700 text-sm font-bold mb-2">Weight (kg)</label>
+                <input type="number" id="weight" placeholder="e.g., 70" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-500" required />
+            </div>
+            <div class="mb-6">
+                <label for="age" class="block text-gray-700 text-sm font-bold mb-2">Age</label>
+                <input type="number" id="age" placeholder="e.g., 30" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-500" required />
+            </div>
+            <div class="mb-6">
+                <label for="gender" class="block text-gray-700 text-sm font-bold mb-2">Gender</label>
+                <select id="gender" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label for="activityLevel" class="block text-gray-700 text-sm font-bold mb-2">Activity Level</label>
+                <select id="activityLevel" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                    <option value="">Select Activity Level</option>
+                    <option value="sedentary">Sedentary (little to no exercise)</option>
+                    <option value="lightlyActive">Lightly Active (light exercise/sports 1-3 days/week)</option>
+                    <option value="moderatelyActive">Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+                    <option value="veryActive">Very Active (hard exercise/sports 6-7 days a week)</option>
+                </select>
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-md focus:outline-none focus:shadow-outline transition-colors duration-300">Update Profile</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+</html>

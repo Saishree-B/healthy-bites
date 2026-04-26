@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb://localhost:27017/diabetic_recipe_db",
+    "jwtSecret": "your-new-and-very-strong-secret-123456789",
+    "ML_SERVICE_URL": "http://localhost:5000/predict"
+}

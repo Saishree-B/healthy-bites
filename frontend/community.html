@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Bites - Community Recipes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-teal-600">Healthy Bites</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-600 hover:text-gray-800">Dashboard</a>
+                <a href="community.html" class="text-teal-600 hover:text-teal-800 font-semibold">Community</a>
+                <a href="addRecipe.html" class="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">Add Recipe</a>
+                <a href="profile.html" class="text-gray-600 hover:text-gray-800">Profile</a>
+                <button id="logoutBtn" class="text-gray-600 hover:text-gray-800">Logout</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-6 py-8">
+        <h1 class="text-4xl font-bold text-center text-teal-700 mb-2">Community Kitchen</h1>
+        <p class="text-center text-gray-500 mb-10">Discover delicious, healthy recipes shared by others!</p>
+        
+        <div id="community-recipes" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+    </div>
+    <script src="./js/community.js"></script>
+</body>
+</html>
