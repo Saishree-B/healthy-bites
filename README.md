@@ -37,7 +37,7 @@ Healthy Bites is a full-stack web application that helps users create, analyze, 
 * Python
 * Flask
 * Scikit-learn
-* NLP
+  
 
 **Database**
 
